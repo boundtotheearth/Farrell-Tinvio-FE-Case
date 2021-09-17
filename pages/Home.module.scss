@@ -1,14 +1,20 @@
+@import "../styles/theme/_theme.scss";
+
 .clickable {
   display: block;
   color: #000000;
   text-decoration: none;
-  background-color: white;
+  background-color: $card;
   transition: background-color 0.1s;
   padding: 20px;
-  border: solid 2px #DBE2E8;
+  border: solid 2px $primary;
   border-radius: 1rem;
   
 }
 .clickable:hover {
-  background-color: #DBE2E8;
+  background-color: $primary;
+}
+
+.header {
+  font-family: $text-font;
 }

@@ -1,11 +1,13 @@
 import React from "react";
-import styles from "./Post.module.css"
+import styles from "./Post.module.scss"
 
-export default ({ title, body }) => {
+const Post = ({ title, body }) => {
   return (
-    <div className={styles.container}>
+    <a className={styles.container} href="#post">
       <h1 className={styles.title}>{title}</h1>
       <h3 className={styles.body}>{body}</h3>
-    </div>
+    </a>
   )
 }
+
+export default Post

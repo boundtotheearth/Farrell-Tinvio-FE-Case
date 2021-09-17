@@ -1,9 +1,11 @@
+@import "../../styles/theme/theme.scss";
+
 .section {
   display: flex;
   flex-direction: column;
   margin: 25px 50px;
   border-radius: 1rem;
-  background-color: white;
+  background-color: $card;
   box-shadow: 5px;
 }
 

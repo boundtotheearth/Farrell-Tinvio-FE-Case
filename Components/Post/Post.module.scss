@@ -1,0 +1,34 @@
+@import "../../styles/theme/theme.scss";
+
+.container {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  background-color: $card;
+  transition: background-color 0.1s;
+  padding: 20px;
+  border: solid 2px $primary;
+  border-radius: 1rem;
+  margin: 20px 0px;
+}
+
+.container:hover {
+  background-color: $primary;
+}
+
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  font-family: $text-font;
+}
+
+.body {
+  color: #A5A9AC;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  font-family: $text-font;
+}

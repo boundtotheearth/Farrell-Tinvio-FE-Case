@@ -1,14 +1,16 @@
 import React from "react";
 import HeroImage from "../HeroImage";
-import styles from "./PageSection.module.css"
+import styles from "./PageSection.module.scss"
 
-export default ({ children, image }) => {
+const PageSection = ({ children, image }) => {
   return (
     <div className={styles.section}>
-      <HeroImage src={image} />
+      <HeroImage src={image} href="/"/>
       <div className={styles.contents}>
         {children}
       </div>
     </div>
   )
 }
+
+export default PageSection

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import HeroImage from "../../Components/HeroImage";
 import IconText from "../../Components/IconText";
 import PageLayout from "../../Components/PageLayout";
 import PageSection from "../../Components/PageSection";
 import Post from "../../Components/Post";
+import styles from "./Users.module.scss";
 
 import axios from "axios";
 import { capitalizeFirstLetter } from "../../Utils/utils";
@@ -64,7 +64,7 @@ export async function getStaticProps({ params }) {
   }))
 }
 
-export default ({ user }) => {
+const UsersPage = ({ user }) => {
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -90,11 +90,11 @@ export default ({ user }) => {
     <PageLayout>
       {loading ? (
         <PageSection>
-          <h1>Loading...</h1>
+          <h1 className={styles.header}>Loading...</h1>
         </PageSection>
       ) : (
         <PageSection image='/image.jpg'>
-          <h1>{user.name}</h1>
+          <h1 className={styles.header}>{user.name}</h1>
           <IconText icon="/phone.svg" text={user.phone}/>
           <IconText icon="/category.png" text={user.company}/>
           <IconText icon="/icon-24-shop.svg" text={user.address}/>
@@ -102,10 +102,12 @@ export default ({ user }) => {
       )}
       
       <PageSection>
-        <h1>{user.name.split(" ")[0] + "'s Posts"}</h1>
-        <h3>{user.posts.length} POSTS</h3>
-        {user.posts.map((post) => (<Post title={post.title} body={post.body}/>))}
+        <h1 className={styles.header}>{user.name.split(" ")[0] + "'s Posts"}</h1>
+        <h3 className={styles.subheader}>{user.posts.length} POSTS</h3>
+        {user.posts.map((post, id) => (<Post key={id} title={post.title} body={post.body}/>))}
       </PageSection>
     </PageLayout>
   );
 }
+
+export default UsersPage

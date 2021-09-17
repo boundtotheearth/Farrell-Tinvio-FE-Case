@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./HeroImage.module.css"
 
-export default ({ src }) => {
+const HeroImage = ({ src, href }) => {
   return (
-    <img className={styles.hero} src={src}/>
+    <a href={href}>
+      <img className={styles.hero} src={src}/>
+    </a>
   )
 }
+
+export default HeroImage
