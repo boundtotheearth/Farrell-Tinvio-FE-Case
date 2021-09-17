@@ -17,11 +17,16 @@ Dummy data was obtained from [https://jsonplaceholder.typicode.com](https://json
 NextJS was used to build the website, which is a ReactJS framework. The project uses Typescript.
 
 2. Add a visual loader when your data is loading
+
+Not Attempted.
+
 3. Add UI to allow us to switch between users in the list
 
 An "All Users" page was added, which displays all the available users in the list. Clicking on each user will load a page containing the user's information and posts.
 
 4. Mobile responsiveness
+
+The website is mobile responsive. Elements resize depending on the screen size, and media queries are used to switch between different font sizes for mobile and desktop sizes.
 
 5. Host the website for preview
 

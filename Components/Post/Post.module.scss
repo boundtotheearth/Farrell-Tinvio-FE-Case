@@ -16,21 +16,44 @@
   background-color: $primary;
 }
 
-.title {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-transform: capitalize;
-  font-family: $text-font;
-  font-size: min(4vw, 24px);
+@media only screen and (max-width: 768px) {
+  .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    font-family: $text-font;
+    font-size: 12px;
+  }
+
+  .body {
+    color: #A5A9AC;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    font-family: $text-font;
+    font-size: 8px;
+  }
 }
 
-.body {
-  color: #A5A9AC;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-transform: capitalize;
-  font-family: $text-font;
-  font-size: max(3vw, 16px);
+@media only screen and (min-width: 768px) {
+  .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    font-family: $text-font;
+    font-size: 24px;
+  }
+
+  .body {
+    color: #A5A9AC;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    font-family: $text-font;
+    font-size: 20px;
+  }
 }
