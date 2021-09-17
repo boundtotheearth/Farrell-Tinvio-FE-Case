@@ -1,0 +1,14 @@
+.clickable {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  background-color: white;
+  transition: background-color 0.1s;
+  padding: 20px;
+  border: solid 2px #DBE2E8;
+  border-radius: 1rem;
+  
+}
+.clickable:hover {
+  background-color: #DBE2E8;
+}
