@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./IconText.module.scss"
 
-const IconText = ({ icon, text }) => {
+interface Props {
+  icon: string,
+  text: string
+}
+
+const IconText: React.FC<Props> = ({ icon, text }) => {
   return (
     <div className={styles.container}>
       <img className={styles.icon} src={icon}/>

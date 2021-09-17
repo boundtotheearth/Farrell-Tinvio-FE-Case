@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./Post.module.scss"
 
-const Post = ({ title, body }) => {
+interface Props {
+  title?: string,
+  body?: string
+}
+
+const Post: React.FC<Props> = ({ title, body }) => {
   return (
     <a className={styles.container} href="#post">
       <h1 className={styles.title}>{title}</h1>

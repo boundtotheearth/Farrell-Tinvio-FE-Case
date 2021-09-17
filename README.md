@@ -14,7 +14,7 @@ Dummy data was obtained from [https://jsonplaceholder.typicode.com](https://json
 ### The following optional tasks were attempted:
 1. User React/Typescript in your implementation
 
-NextJS was used to build the website, which is a ReactJS framework.
+NextJS was used to build the website, which is a ReactJS framework. The project uses Typescript.
 
 2. Add a visual loader when your data is loading
 3. Add UI to allow us to switch between users in the list
